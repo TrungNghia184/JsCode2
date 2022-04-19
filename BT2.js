@@ -17,7 +17,7 @@ const animals = [
   ]
 function checkAnimalWeightOver50(animal) {
   if (animal.weight > 50) {
-    return animal
+    return true
   }
 }
 function getAnimalsWeightOver50(animals) {
