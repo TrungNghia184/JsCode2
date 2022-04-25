@@ -4,7 +4,6 @@ function getCovidData() {
   return new Promise((resolve, reject) => {
     const dataFromAPI = axios.get("https://api.covid19api.com/summary");
     console.log("Đang lấy dữ liệu, xin vui lòng chờ...");
-    console.log(dataFromAPI)
     resolve(dataFromAPI);
   });
 }
