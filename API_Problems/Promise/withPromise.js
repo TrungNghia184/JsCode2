@@ -39,10 +39,10 @@ getCovidData()
     `Nhiễm mới: ${data.data.Global.NewConfirmed} - Số người chết mới: ${data.data.Global.NewDeaths} - Tổng số người chết: ${data.data.Global.TotalDeaths}`
   );
   console.log(
-    `Quốc Gia có số lượng tổng cộng người chết nhiều nhất là ${getCountryWithMostTotalDeaths(data)[0][0]}: ${getCountryWithMostTotalDeaths(data)[0][1]} người `
+    `Quốc Gia có số lượng tổng cộng người chết nhiều nhất là: ${getCountryWithMostTotalDeaths(data)[0][0]} (${getCountryWithMostTotalDeaths(data)[0][1]} người) `
   );
   console.log(
-    `Quốc Gia có số lượng người mắc mới trong ngày nhiều nhất là ${getCountryWithMostNewConfirm(data)[0][0]}: ${getCountryWithMostNewConfirm(data)[0][1]} người`
+    `Quốc Gia có số lượng người mắc mới trong ngày nhiều nhất là: ${getCountryWithMostNewConfirm(data)[0][0]} (${getCountryWithMostNewConfirm(data)[0][1]} người)`
   );
 })
 .catch((error) => {
